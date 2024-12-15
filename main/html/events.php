@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="/BEHIND_THE_SCENES/main/">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/eventbox.css">
-    <script src="js/navbar.js"></script>
-    <script src="js/eventbox_entrance.js" defer></script>
-   
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/eventbox.css">
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/eventbox_entrance.js" defer></script>
+    <?php session_start(); ?>
+    <?php include '../php/navbar_setup.php'; ?>
+    <title>Events</title>
 </head>
 <body>
   

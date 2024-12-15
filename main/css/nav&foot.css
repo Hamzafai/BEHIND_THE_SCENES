@@ -52,7 +52,7 @@ header{
   display: none;
 }
 
-.navbar-links li {
+.navbar-links > li {
   margin-left: 1.5rem;
 }
 
@@ -66,7 +66,7 @@ header{
 
 .navbar-login{
   display: block;
-  padding: 1rem 1rem;
+  padding: 0.5rem 0.7rem;
   border-radius: 2rem;
   font-size: 1.2rem;
   border: none;
@@ -83,7 +83,6 @@ header{
 .navbar-login:hover{
   transform: scale(1.1);
 }
-
 
 /* Toggle Button (hidden by default) */
 .navbar-toggle {
@@ -126,7 +125,7 @@ header{
   display: flex;
   position: relative;
   align-items: center;
-  justify-content: center; /* Center the icons in the footer */
+  justify-content: center; 
   gap: 15px; /* Space between each icon */
 }
 
@@ -165,6 +164,93 @@ header{
 }
 
 
+.fenetre {
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e9f2;
+  width: 10.5em;
+  height: 10.5em;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 4%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 5em;
+  right: 4em;
+  z-index: 99999999;
+}
+
+#itemss{
+  text-decoration: none;
+  color: #4859A8;
+  width: 100%;
+}
+
+#itemss > p:hover {
+  background-color: #d3d3d3;
+
+}
+
+#ul{
+  list-style-type: none;
+  margin: 0%;
+  margin-left: 1em;
+  padding: 0%;
+}
+
+#p{
+  font-family: Poppins, sans-serif;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  width: 8em;
+}
+
+#formm{
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgb(72, 89, 168);
+  text-decoration: none;
+  transition: 0.2s all ease;
+  margin-top: 0.7em;
+}
+
+
+#button {
+    background-color: rgb(72, 89, 168);
+    border: none;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+#alertMessage{
+  font-size: 16px;
+  margin: 0;
+}
+.alert-box {
+  position: fixed;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 5px;
+  border-radius: 5px;
+  z-index: 9999;
+  color: white;
+  font-weight: bold;
+}
+
+.alert-box.success {
+  background-color: #4CAF50; /* Green background */
+}
+
+.alert-box.error {
+  background-color: #f44336; /* Red background for errors */
+}
 
 
 /* Responsive Styles */
@@ -217,7 +303,6 @@ header{
   .navbar-toggle {
     display: block; /* Show toggle button on small screens */
   }
-
 
   /* Social Icons */
   .social-icons {

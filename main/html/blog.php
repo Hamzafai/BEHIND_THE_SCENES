@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Hamza Faiz Ahmed Fouatih & Youcef Belaib">
         <meta name="description" content="Add an Event in a Club">
-        <title>Add an Event</title>
         <link rel="stylesheet" href="../css/Club_Card.css" type="text/css">
-        <script src="../js/navbar.js"></script>
-        <!--<script src="../js/blogcard_entrance.js" defer></script>
--->
+        <script src="../js/navbar.js" defer></script>
+        <?php session_start(); ?>
+        <?php include '../php/navbar_setup.php'; ?>
+        <!--<script src="../js/blogcard_entrance.js" defer></script>-->
+        <title>Blog</title>
     </head>
 
     <body>

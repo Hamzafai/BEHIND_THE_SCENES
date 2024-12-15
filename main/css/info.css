@@ -83,10 +83,16 @@ body{
     color: rgb(72,89,168);
     transition: 0.5s ease;
 }
+
+
 .links a:hover{
     background-color: rgb(72,89,168);
     color: whitesmoke;
 }
+
+
+
+
 .right{
     padding: 30px;
 
@@ -179,8 +185,23 @@ input:focus, select:focus {
     transform: scale(1.1);
 }
 
+.icon{
+    position: absolute;     
+    bottom: 23.2em;         
+    width: 42.5%;     
+    height: 32.1%;    
+    background: rgba(0, 0, 0, 0.2);     
+    display: flex ;     
+    justify-content: center;    
+    align-items: center;      
+    transition: opacity 0.3s ease;
+    border-radius: 10em;
+    opacity: 0;    
+}
 
-
+.pfp:hover .icon {
+    opacity: 1;
+}
 
 @media (max-width: 850px) {
     .split{

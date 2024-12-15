@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/login.css">
     <link rel="stylesheet" href="../../css/floatingforms.css">
-    <script src="../../js/navbar.js"></script>
+    <script src="../../js/navbar.js" defer></script>
     <script src="../../js/Form_validation.js" defer></script>
+    <?php include '../../php/navbar_setup.php'; ?>
 
     <title>Document</title>
 </head>

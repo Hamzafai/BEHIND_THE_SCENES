@@ -24,8 +24,7 @@ if(passwd){
     })
 }
 
-
-Email.addEventListener("blur", function() {
+if(Email){ Email.addEventListener("blur", function() {
     let content_email = Email.value.trim()
     if (!isEmail(content_email)) {
         PromptError(Email, "Not a Valid email*")
@@ -35,6 +34,7 @@ Email.addEventListener("blur", function() {
     }
 })
 
+}
 if(Url){
     Url.addEventListener("blur", function() {
         let content_link = Url.value.trim()
@@ -126,7 +126,8 @@ function PromptSucces(input) {
 document.getElementById("submit-btn").onclick=function(event) {
     event.preventDefault()
     if(frm1){
-        if (errmail && errurl) {
+        if (errurl) {
+
             setTimeout(function() {
                 frm1.submit();
             }, 1000); // 1-second delay before submitting
@@ -195,5 +196,3 @@ function isEmail(Email) {
 function isUrl(link) { 
     return  /^(https?:\/\/)(www\.)?([a-zA0-9_\-]+)\.[a-zA-Z]{2,5}(\.[a-zA-Z]{2,3})?$/.test(link);
 } 
-
-
