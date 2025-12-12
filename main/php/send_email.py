@@ -6,10 +6,10 @@ import sys
 def send_email(name, email, message):
     smtp_server = "smtp.gmail.com"
     smtp_port = 587
-    smtp_user = "hamza.faiz.ahmedfouatih@ensia.edu.dz"  # Replace with your Gmail address
-    smtp_password = "cvhq schw qfcg qbux"  # Replace with your Gmail App Password
+    smtp_user = ""  # Replace with your Gmail address
+    smtp_password = ""  # Replace with your Gmail App Password
 
-    to_email = "hamza.faiz.ahmedfouatih@ensia.edu.dz"
+    to_email = ""
     subject = "Contact Form Submission"
     
     msg = MIMEMultipart()
